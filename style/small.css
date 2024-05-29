@@ -4,19 +4,19 @@
     "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
     --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    --header-bg: #d19696;
+    --header-bg: #2C3639;
     --bg: white;
     --nav: #b99797;
-    --box-bg:#d8bebe;
-    --text: #dcdcdc;
+    --box-bg:#DCD7C9;
+    --text: #DCD7C9;
     --text-light: #ababab;
     --border: #666;
-    --image_border_color: #666;
+    --image_border_color: #A27B5C;
     --image_border_px: 2px;
     --image_width: 100px;
     --image_height: 100px;
-    --title-text: rgb(212, 91, 91);
-    --description-text: rgb(161, 120, 120);
+    --title-text: #A27B5C;
+    --description-text: #A27B5C;
 }
 html {
     font-family: var(--sans-font);
@@ -28,7 +28,10 @@ h1, h2, h3 {
 }
 
 body {
-    background: var(--bg);
+    background-image: url("../img/blur2.jpg");
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    background-attachment: fixed;
     font-size: 1.15rem;
     line-height: 1.5;
     display: grid;
@@ -115,10 +118,11 @@ nav a, nav a:visited {
     width: 200px;
 }
 nav a:hover {
-    color: #ffb300;
-    border-color: #ffb300;
+    color: #A27B5C;
+    border-color: #A27B5C;
 }
 .content {
+    color: #3F4E4F;
     padding: 1em;
     border-bottom: #666 1px solid;
     display: flex;
