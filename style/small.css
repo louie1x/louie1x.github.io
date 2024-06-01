@@ -158,3 +158,65 @@ strong {
     color: var(--description-text);
     overflow: auto;
 }
+
+@media (max-width: 768px) {
+    /* 調整 header */
+    header {
+        grid-template-columns: 1fr; /* 將 header 設置為單列 */
+        text-align: center;
+    }
+
+    .header_img img {
+        margin: auto;
+    }
+
+    nav.header {
+        display: flex;
+        flex-direction: row; /* 垂直排列導航連結 */
+        align-items: center;
+    }
+
+    nav.header a {
+        margin-bottom: 1rem; /* 調整導航連結的間距 */
+    }
+
+    /* 調整 side-nav */
+    .side-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none; /* 移除右邊框 */
+        border-bottom: 1px solid var(--border);
+        top: 0;
+    }
+
+    .side-nav nav {
+        display: flex;
+        flex-direction: row; /* 垂直排列導航連結 */
+        align-items: center;
+    }
+
+    .side-nav nav a {
+        width: 90%; /* 自適應寬度 */
+        margin: 0.5rem 0;
+    }
+
+    /* 調整 main */
+    main {
+        grid-template-columns: 1fr; /* 單列佈局 */
+        padding-left: 0;
+    }
+
+    .scroll {
+        padding: 1rem;
+    }
+
+    .box {
+        width: 100%; /* 自適應寬度 */
+        margin-top: 1em;
+    }
+
+    .photo-box img, .youtube-box iframe, .ppt-box iframe {
+        width: 100%;
+    }
+}

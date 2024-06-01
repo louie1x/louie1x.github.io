@@ -114,6 +114,11 @@ body {
 }
 
 .header_nav_menu_list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
   margin-left: 1em; /* 左邊距 */
   margin-right: 1em; /* 右邊距 */
 }
@@ -142,4 +147,42 @@ body {
 .footer_a_item {
   color: var(--footer_link_text_color); /* 連結顏色 */
   text-decoration: none; /* 移除底線 */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* 將 header 和 logo 調整為更小尺寸 */
+  .header_img img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* 將標題文字縮小 */
+  .header_text h1 {
+    font-size: 1.5em;
+  }
+
+  .header_text h2 {
+    font-size: 1em;
+  }
+
+  /* 將社交媒體圖標縮小 */
+  .header_svg_item {
+    width: 2em;
+    height: 2em;
+  }
+
+  /* 導航菜單調整為垂直排列 */
+  .header_nav_menu_list {
+    flex-direction: column; /* 垂直排列 */
+  }
+
+  .header_nav_menu_item {
+    width: auto; /* 自適應寬度 */
+    margin: 0.5em 0; /* 縮小外邊距 */
+  }
 }
