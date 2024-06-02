@@ -55,6 +55,8 @@ header {
     z-index: 100;
 }
 .header_img img{
+    justify-content: center;
+    align-items: center;
     height: var(--image_height);
     width: var(--image_width);
     border: var(--image_border_px) solid var(--image_border_color);
@@ -173,7 +175,7 @@ strong {
     }
 
     nav.header {
-        display: flexbox;
+        display: flex;
         flex-direction: column; /* 垂直排列導航連結 */
         align-items: center;
     }
@@ -190,7 +192,7 @@ strong {
         height: auto;
         border-right: none; /* 移除右邊框 */
         border-bottom: 1px solid var(--border);
-        top: 12rem;
+        top: 25rem;
     }
 
     .side-nav nav {
