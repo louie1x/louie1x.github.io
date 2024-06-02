@@ -162,17 +162,19 @@ strong {
 @media (max-width: 768px) {
     /* 調整 header */
     header {
-        grid-template-columns: 1fr; /* 將 header 設置為單列 */
-        text-align: center;
+        grid-template-columns: 1fr 1fr; /* 將 header 設置為單列 */
+        flex-direction: column; /* 垂直排列導航連結 */
+        align-items: center;
     }
 
     .header_img img {
-        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     nav.header {
-        display: flex;
-        flex-direction: row; /* 垂直排列導航連結 */
+        display: flexbox;
+        flex-direction: column; /* 垂直排列導航連結 */
         align-items: center;
     }
 
@@ -182,15 +184,17 @@ strong {
 
     /* 調整 side-nav */
     .side-nav {
-        position: relative;
+        padding-top: 1rem;
+        position: fixed;
         width: 100%;
         height: auto;
         border-right: none; /* 移除右邊框 */
         border-bottom: 1px solid var(--border);
-        top: 0;
+        top: 12rem;
     }
 
     .side-nav nav {
+        height: auto;
         display: flex;
         flex-direction: row; /* 垂直排列導航連結 */
         align-items: center;
@@ -198,7 +202,8 @@ strong {
 
     .side-nav nav a {
         width: 90%; /* 自適應寬度 */
-        margin: 0.5rem 0;
+        padding: 0.5rem;
+        margin: 2rem;
     }
 
     /* 調整 main */
@@ -208,6 +213,7 @@ strong {
     }
 
     .scroll {
+        margin-top: 25rem;
         padding: 1rem;
     }
 
@@ -217,6 +223,11 @@ strong {
     }
 
     .photo-box img, .youtube-box iframe, .ppt-box iframe {
-        width: 100%;
+        width: 90%;
+    }
+
+    .youtube-box iframe, .ppt-box iframe {
+        height: auto;
+        aspect-ratio: 16 / 9; /* 維持 16:9 的寬高比 */
     }
 }
